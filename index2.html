@@ -5,19 +5,28 @@
     <title>Xizmatlar</title>
     <link rel="stylesheet" href="style/index2.css">
 </head>
-<body bgcolor="silver">
+<body bgcolor="#f4f4f4">
 <header>
     <div class="navbar">
         <div class="container">
             <div class="logo-img">
                 <img src="img/pixer-logo@2x.png" height="20" width="58"/></div>
             <ul class="nav-item">
-                <li class="item"><a href="#">Bosh sahifa</a></li>
-                <li class="item"><a href="index2.html">Xizmatlar</a>
-                <li class="item"><a href="#">Portfolio</a></li>
-                <li class="item"><a href="#">Jamoa</a></li>
-                <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Kontaktlar</a></li>
+                <li class="item"><a class="link" href="#">Bosh sahifa</a></li>
+                <li class="item"><a class="link"  href="#">Xizmatlar  </a>
+                    <div class="dropdown">
+                        <ul class="dropdown-ul">
+                            <li class="dropdown-li">Telegram bot</li>
+                            <li class="dropdown-li">Smm</li>
+                            <li class="dropdown-li">Grafik dizayn</li>
+                            <li class="dropdown-li">Veb sayit</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a class="link"  href="#">Portfolio</a></li>
+                <li class="item"><a class="link"  href="#">Jamoa</a></li>
+                <li class="item"><a  class="link" href="#">Blog</a></li>
+                <li class="item"><a class="link"  href="#">Kontaktlar</a></li>
             </ul>
             <a href="tel:+998909213711">
                 <button>+998 90 921 37 11</button>
@@ -27,13 +36,15 @@
     </div>
 </header>
 <main>
-    <div class="text">
+    <div class="text-1">
+        <div class="txt">
         <h1>Xizmatlar</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis minima modi necessitatibus
             numquam
             placeat ratione repellat repudiandae. A assumenda blanditiis ducimus excepturi fugit ipsum natus
             quia
             repellendus velit veniam.</p>
+        </div>
     </div>
     <div class="container">
         <div class="row">
@@ -147,77 +158,53 @@
             </div>
         </div>
     </div>
-    <section>
-        <div class="container">
-            <div class="text">
-                <h1>Buyurtma berish</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis minima modi necessitatibus
-                    numquam
-                    placeat ratione repellat repudiandae. A assumenda blanditiis ducimus excepturi fugit ipsum natus
-                    quia
-                    repellendus velit veniam.</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Ismingiz">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="telephone" placeholder="Telefon raqamingiz">
-                            </div>
-                            <div class="form-group">
-                                <select name="Xizmat turi" id="xizmat">
-                                    <option value="web">Xizmat turi</option>
-                                    <option value="android">ANDROID</option>
-                                    <option value="smm">SMM</option>
-                                </select>
-                            </div>
-                            <button>Buyurtma berish</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="card-3">
-                        <h3>Copyright 2020</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur magni non porro quod
-                            repellendus tempore voluptates voluptatum! Expedita, iure, placeat.</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card-3">
-                        <h3>Sayt sahifalari </h3>
-                        <ul>
-                            <li>Bosh sahifa</li>
-                            <li>Xizmatlar</li>
-                            <li>Porfolio</li>
-                            <li>Jamoa</li>
-                            <li>Blog</li>
-                            <li>Kontaktlar</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card-3">
-                        <h3>Biz internetda</h3>
-                        <ul>
-                            <li><img src="img/telegram.jpg" height="20" width="20"/>Telegram</li>
-                            <li><img src="img/facebook.png" height="20" width="20"/>Facebook</li>
-                            <li><img src="img/instagram.png" height="20" width="20"/>Instagram</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
 </main>
+<section>
+    <div class="text-head-3">
+        <h2>Biz qanday ishlaymiz?</h2>
+        <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget
+            sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+    </div>
+    <div class="card-form">
+        <form class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Ismingiz">
+            <input type="tel" class="form-control" id="telephone" placeholder="Telefon raqamingiz">
+            <select name="Xizmat turi" id="xizmat">
+                <option value="web" hidden>Xizmat turi</option>
+                <option value="android">ANDROID</option>
+                <option value="smm">SMM</option>
+            </select>
+            <button class="btn-2">Buyurtma bering</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="card-footer">
+            <h4>Copyright 2020</h4>
+            <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget
+                sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.</p>
+        </div>
+        <div class="card-footer-ul">
+            <h4>Sayt sahifalari</h4>
+            <ul class="footer-ul">
+                <li class="footer-li">Bosh sahifa</li>
+                <li class="footer-li">Xizmatlar</li>
+                <li class="footer-li">Portfolio</li>
+                <li class="footer-li">Jamoa</li>
+                <li class="footer-li">Blog</li>
+                <li class="footer-li">Kontaktlar</li>
+            </ul>
+        </div>
+        <div class="card-footer-ul">
+            <h4>Biz internetda</h4>
+            <ul class="footer-ul">
+                <li class="footer-li">Bosh sahifa</li>
+                <li class="footer-li">Xizmatlar</li>
+                <li class="footer-li">Portfolio</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
